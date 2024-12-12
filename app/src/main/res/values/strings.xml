@@ -1,24 +1,115 @@
 <resources>
+    <!-- Application -->
     <string name="app_name">SAFE</string>
 
-    <!-- Login -->
-    <string name="login_page_login">SAFETY ACCESS FOR EVERYONE</string>
-    <string name="login_page_email">Email</string>
-    <string name="login_page_password">Password</string>
-    <string name="login_page_forgot_password">Problème de connexion ?</string>
+    <!-- Login Page -->
+    <string name="login_title">SAFETY ACCESS FOR EVERYONE</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_forgot_password">Problème de connexion ?</string>
 
-    <!-- Accueil -->
-    <string name="home_page_title">Accueil</string>
-    <string name="home_page_welcome">Bienvenue,</string>
-    <string name="home_page_username">Username</string>
-    <string name="home_page_inscription_message">Vous êtes inscrit à</string>
-    <string name="home_page_summary_section">Résumé</string>
-    <string name="home_page_summary_section_stock">Stock</string>
-    <string name="home_page_summary_section_stock_value">0</string>
-    <string name="home_page_summary_section_event">Événements</string>
-    <string name="home_page_summary_section_event_value">0</string>
-    <string name="home_page_globalview_section">Vue globale</string>
+    <string name="return_button">Retour</string>
+    <!-- Nav Bar -->
+    <string name="nav_home">Accueil</string>
+    <string name="nav_stock">Stock</string>
+    <string name="nav_news">Actualités</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_event">Evènement</string>
 
 
 
+    <!-- Home Page -->
+    <string name="home_title">Accueil</string>
+    <string name="home_welcome">Bienvenue, %s</string>
+    <string name="home_inscription_message">Vous êtes inscrit pour l\'évènement %s ce week-end.</string>
+    <string name="home_summary_title">Résumé</string>
+    <string name="home_summary_stock">Stock</string>
+    <string name="home_summary_events">Événements à venir</string>
+    <string name="home_view_title">Vue d\'ensemble</string>
+    <string name="home_view_filter">Filtre</string>
+    <string name="home_notifications">Notifications</string>
+    <string name="home_news">Actualités</string>
+    <string name="home_stock">Stock</string>
+
+    <!-- Stock Page -->
+    <string name="stock_title">Stock</string>
+    <string name="stock_summary_title">Résumé</string>
+    <string name="stock_summary_label_urgent">Urgent</string>
+    <string name="stock_summary_label_moderate">Modéré</string>
+    <string name="stock_search_placeholder">Rechercher…</string>
+    <string name="stock_add_button">Ajouter un produit</string>
+    <string name="stock_add_title">Ajouter un produit</string>
+    <string name="stock_add_name">Nom du produit</string>
+    <string name="stock_add_quantity">Quantité</string>
+    <string name="stock_add_threshold">Seuil d\'alerte</string>
+    <string name="stock_add_comments">Commentaires</string>
+    <string name="stock_add_location">Lieu</string>
+
+    <!-- Notifications Page -->
+    <string name="notifications_title">Notifications</string>
+
+    <!-- Tab Titles -->
+    <string name="notifications_tab_stock">Stock</string>
+    <string name="notifications_tab_news">Actualités</string>
+
+    <!-- Notification Items -->
+    <string name="notification_urgent">Urgent</string>
+    <string name="notification_moderate">Modéré</string>
+    <string name="notification_description_stock">Description</string>
+    <string name="notification_description_low_stock">Description</string>
+
+    <!-- News Section -->
+    <string name="news_event_name">Nom de l\'événement</string>
+    <string name="news_event_description">Description de l\'événement</string>
+    <string name="news_event_category">Catégorie</string>
+    <string name="news_event_date">Date</string>
+    <string name="news_event_status_inscrit">Inscrit</string>
+    <string name="news_event_status_organisation">Organisation</string>
+
+    <!-- Event Details -->
+    <string name="event_details_title">Détails de l\'événement</string>
+    <string name="event_details_date">Date : %s</string>
+    <string name="event_details_time">Heure : %s - %s</string>
+    <string name="event_details_location">Lieu : %s</string>
+    <string name="event_details_description">Description :</string>
+    <string name="event_details_add_to_calendar">Ajouter à Google Agenda</string>
+
+    <!-- Product Details -->
+    <string name="product_name">Nom</string>
+    <string name="product_quantity">Quantité</string>
+    <string name="product_comments">Commentaires</string>
+    <string name="product_location">Lieu</string>
+    <string name="product_threshold">Seuil</string>
+
+    <!-- Arrays -->
+    <string-array name="stock_places">
+        <item>Entrepôt 1</item>
+        <item>Entrepôt 2</item>
+        <item>Entrepôt 3</item>
+        <item>Autre</item>
+    </string-array>
+    <integer-array name="stock_quantity_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </integer-array>
+    <integer-array name="stock_threshold_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </integer-array>
 </resources>
