@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="237dp"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logo_safe"
+        />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAFETY ACCESS FOR EVERYONE"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/login_email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="yes"
+        />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/login_password"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:inputType="textPassword"
+        android:importantForAutofill="yes"
+        />
+
+    <EditText
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:text="@string/login_forgot_password"
+        android:textColor="@color/light_grey_form"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/submit_button"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:drawableTint="#FFFFFF"
+        android:fontFamily="@font/montserrat_bold"
+        android:importantForAutofill="yes"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:src="@drawable/ic_arrow_right"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
