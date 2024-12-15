@@ -114,27 +114,4 @@
     </integer-array>
 </resources>
 
-    <string name="app_name">SAFE</string>
-
-    <!-- Login -->
-    <string name="login_page_login">SAFETY ACCESS FOR EVERYONE</string>
-    <string name="login_page_email">Email</string>
-    <string name="login_page_password">Password</string>
-    <string name="login_page_forgot_password">Problème de connexion ?</string>
-
-    <!-- Accueil -->
-    <string name="home_page_title">Accueil</string>
-    <string name="home_page_welcome">Bienvenue,</string>
-    <string name="home_page_username">Username</string>
-    <string name="home_page_inscription_message">Vous êtes inscrit à</string>
-    <string name="home_page_summary_section">Résumé</string>
-    <string name="home_page_summary_section_stock">Stock</string>
-    <string name="home_page_summary_section_stock_value">0</string>
-    <string name="home_page_summary_section_event">Événements</string>
-    <string name="home_page_summary_section_event_value">0</string>
-    <string name="home_page_globalview_section">Vue globale</string>
-
-
-
-</resources>
 

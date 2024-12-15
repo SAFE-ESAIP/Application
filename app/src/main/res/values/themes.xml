@@ -8,14 +8,14 @@
     <style name="TitlePages">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/dark_blue</item>
-        <item name="android:fontFamily">@font/AlbertSans-SemiBold</item>
+        <item name="android:fontFamily">@font/albertsans_semibold</item>
     </style>
 
     <!-- Nav bar -->
     <style name="NavBar">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">7sp</item>
-        <item name="android:fontFamily">@font/Montserrat-Medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
     </style>
 
     <style name="safety_login">
