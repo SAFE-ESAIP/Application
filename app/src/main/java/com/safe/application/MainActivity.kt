@@ -26,34 +26,56 @@ import kotlin.math.log
 class MainActivity : ComponentActivity() {
 
     private lateinit var binding: LoginPageBinding
-
-
-    // Variables pour la connexion avec Firebase
-//    lateinit var auth : FirebaseAuth
-//    lateinit var database : FirebaseDatabase
-
-
+    private lateinit var auth : FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_page)
+        auth = FirebaseAuth.getInstance()
 
-        // Logique de connexion avec Firebase (plus tard pour l'instant c'est un test local)
+        // Logique de connexion avec Firebase
         binding = LoginPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.loginButton.setOnClickListener(View.OnClickListener {
+        binding.loginButton.setOnClickListener {
+            login()
+        }
+        binding.forgotPassword.setOnClickListener {
+            forgotPassword()
+        }
 
-            if (binding.emailInput.text.toString() == "admin" && binding.passwordInput.text.toString() == "admin") {
-                Toast.makeText(this , "Login Successful" , Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this , "Login Failed" , Toast.LENGTH_SHORT).show()
+    }
+    private fun login() {
+        val email = binding.emailInput.text.toString()
+        var password = binding.passwordInput.text.toString()
+
+        if(email.isNotEmpty() && password.isNotEmpty()) {
+            auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
+                }
+            }.addOnFailureListener { exception ->
+                Toast.makeText(this, exception.localizedMessage, Toast.LENGTH_SHORT).show()
             }
 
-
-        binding.forgotPassword.setOnClickListener {
-            Toast.makeText(this , "Forgot Password Clicked" , Toast.LENGTH_SHORT).show()
+        }else {
+            Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show()
         }
-        })
+    }
+
+    private fun forgotPassword() {
+        val email = binding.emailInput.text.toString()
+
+        if(email.isNotEmpty()) {
+            auth.sendPasswordResetEmail(email).addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(this, "Email sent", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "Failed to send email", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }
 
